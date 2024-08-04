@@ -8,32 +8,40 @@ import speakers from './../assets/shared/figma/image-removebg-preview(38).png';
 import earphones from './../assets/shared/figma/image-removebg-preview(42).png';
 import oval from './../assets/shared/figma/Oval Copy 4.png';
 import arrow from './../assets/shared/desktop/icon-arrow-right.svg';
+import ProductList from './ProductList';
 
 
 
 
 const Header = () => {
+	
 
 	
 	return(
 		<nav className="navbar navbar-expand-lg ">
-			<div className="collapse navbar-collapse" id="navbarNav">
-				<div className="container">
-					<ProductCard image={headphones} ovalImage={oval} title="HEADPHONES" link="SHOP" arrowImage={arrow} />
-					<ProductCard image={speakers} ovalImage={oval} title="SPEAKERS" link="SHOP" arrowImage={arrow} />
-					<ProductCard image={earphones} ovalImage={oval} title="EARPHONES" link="SHOP" arrowImage={arrow} />
-				</div>
-		    </div>
 			<hr className="mobile-hr" />
 			<div className="container">
-				<button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+	     		<hr className="desktop-hr" />
+	     	</div>
+			<div className="collapse navbar-collapse" id="navbarNav">
+
+				<ProductCard image={headphones} ovalImage={oval} title="HEADPHONES" link="SHOP" arrowImage={arrow} />
+				<ProductCard image={speakers} ovalImage={oval} title="SPEAKERS" link="SHOP" arrowImage={arrow} />
+				<ProductCard image={earphones} ovalImage={oval} title="EARPHONES" link="SHOP" arrowImage={arrow} />
+
+		    </div>
+			<div className="container nav-container">
+				<button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" >
 	     			<img className="fit-picture" src={hamburgerIcon} alt="hamburger icon" />
 	     		</button>
 	     		<img className="logo" src={logo} alt="audiophile logo" />
+	     		<div className="nav-product-list">
+	     		<ProductList listItem="HOME" />
+	     		<ProductList listItem="HEADPHONES" />
+	     		<ProductList listItem="SPEAKERS" />
+	     		<ProductList listItem="EARPHONES" />
+	     		</div>
 	     		<img className="cart" src={cartIcon} alt="cart icon"  />
-	     	</div>
-	     	<div className="container">
-	     		<hr className="desktop-hr" />
 	     	</div>
     </nav>
 	)

@@ -5,6 +5,7 @@ import React from 'react';
 const ProductCard = ({image, ovalImage, title, link, arrowImage }) => {
 
 	return (
+			<div className="container">
 		      	<ul className="navbar-nav">
 		      		<img className={"nav-img " + title} src={image} alt="headphones image" />
 		      		<img className="oval" src={ovalImage} alt="oval under headphones image" />
@@ -15,7 +16,7 @@ const ProductCard = ({image, ovalImage, title, link, arrowImage }) => {
 		         		</a>
 		        	</li>
 		      	</ul>
-		    
+		    </div>
 
 	)
 }
