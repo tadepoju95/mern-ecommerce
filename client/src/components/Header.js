@@ -30,7 +30,7 @@ const Header = () => {
 				<ProductCard image={earphones} ovalImage={oval} title="EARPHONES" link="SHOP" arrowImage={arrow} />
 
 		    </div>
-			<div className="container nav-container">
+			<div className="container-md nav-container">
 				<button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" >
 	     			<img className="fit-picture" src={hamburgerIcon} alt="hamburger icon" />
 	     		</button>

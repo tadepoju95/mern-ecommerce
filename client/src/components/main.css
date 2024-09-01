@@ -86,7 +86,6 @@ body {
 
 main {
 	background-color: #191919;
-	padding: 16em 0;
 }
 
 p.nav-header {
@@ -120,22 +119,32 @@ p.nav-header {
   display: none;
 }
 
-.headphonesImg {
-  max-width: 100%;
-  margin-top: -14.65em;
+.hero {
+  background-image: url("/src/assets/home/mobile/image-header.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: -1;
+  padding: 100% 0;
+  background-position-y: -80px;
 }
 
-.main-text {
+.hero-text {
   text-align: center;
-  color: white;
-  margin-top: -24.875em;
+  color: #FFFFFF;
+  position: absolute;
+  top: 36%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
+
+
 
 .info {
   letter-spacing: 10px;
   font-size: 0.875rem;
-  color: #979797;
   font-weight: normal;
+  opacity: 49.64%;
 }
 
 .hi {
@@ -143,17 +152,30 @@ p.nav-header {
   letter-spacing: 1.29px;
   font-size: 2.25rem;
   line-height: 40px;
+  margin-bottom: 24px;
 }
 
 .bye {
-  color: #979797;
-  font-size: 0.938rem;
-  font-weight: inherit;
+  font-size: 1rem;
+  font-weight: 500;
   line-height: 25px;
-  max-width: 375px;
+  max-width: 328px;
   margin: 0 auto;
-  width: 75%;
+  opacity: 75%;
 }
+
+
+.hero-button {
+  background-color: #D87D4A;
+  color: white;
+  padding: 1em 1.875em;
+  font-weight: bold;
+  letter-spacing: 1px;
+  border: none;
+  margin-top: 28px;
+}
+
+
 
 
 @media (min-width: 768px) {
@@ -172,7 +194,6 @@ p.nav-header {
 }
 
 
-
 }
 
 
@@ -185,6 +206,7 @@ p.nav-header {
   .cart {
     margin-left: auto;
   }
+
 
 }
 
