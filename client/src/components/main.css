@@ -140,14 +140,14 @@ p.nav-header {
 
 
 
-.info {
+.hero-text-header {
   letter-spacing: 10px;
   font-size: 0.875rem;
   font-weight: normal;
   opacity: 49.64%;
 }
 
-.hi {
+.hero-header {
   font-weight: bold;
   letter-spacing: 1.29px;
   font-size: 2.25rem;
@@ -155,7 +155,7 @@ p.nav-header {
   margin-bottom: 24px;
 }
 
-.bye {
+.hero-text-info {
   font-size: 1rem;
   font-weight: 500;
   line-height: 25px;
@@ -193,6 +193,33 @@ p.nav-header {
   transform: translateY(57px);
 }
 
+.hero {
+  background-image: url("/src/assets/home/tablet/image-header.jpg");
+}
+
+.hero-text {
+  top: 20.2%;
+}
+
+.hero-text-header {
+  margin-bottom: 24px;
+}
+
+.hero-header {
+  letter-spacing: 2px;
+  font-size: 3.375rem;
+  line-height: 58px;
+  margin-bottom: 24px;
+  max-width: 396px;
+}
+
+.hero-text-info {
+  max-width: 349px;
+}
+
+.hero-button {
+  margin-top: 40px;
+}
 
 }
 
