@@ -25,9 +25,9 @@ const Header = () => {
 	     	</div>
 			<div className="collapse navbar-collapse" id="navbarNav">
 
-				<ProductCard image={headphones} ovalImage={oval} title="HEADPHONES" link="SHOP" arrowImage={arrow} />
-				<ProductCard image={speakers} ovalImage={oval} title="SPEAKERS" link="SHOP" arrowImage={arrow} />
-				<ProductCard image={earphones} ovalImage={oval} title="EARPHONES" link="SHOP" arrowImage={arrow} />
+				<ProductCard image={headphones} ovalImage={oval} title="HEADPHONES" link="SHOP" arrowImage={arrow} names="nav-headphones-item" />
+				<ProductCard image={speakers} ovalImage={oval} title="SPEAKERS" link="SHOP" arrowImage={arrow} names="nav-speakers-item" />
+				<ProductCard image={earphones} ovalImage={oval} title="EARPHONES" link="SHOP" arrowImage={arrow} names="nav-earphones-item" />
 
 		    </div>
 			<div className="container-md nav-container">

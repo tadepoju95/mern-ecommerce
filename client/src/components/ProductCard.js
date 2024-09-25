@@ -2,10 +2,10 @@ import React from 'react';
 
 
 
-const ProductCard = ({image, ovalImage, title, link, arrowImage }) => {
+const ProductCard = ({image, ovalImage, title, link, arrowImage, names }) => {
 
 	return (
-			<div className="container">
+			<div className={"container " + names}>
 		      	<ul className="navbar-nav">
 		      		<img className={"nav-img " + title} src={image} alt="headphones image" />
 		      		<img className="oval" src={ovalImage} alt="oval under headphones image" />

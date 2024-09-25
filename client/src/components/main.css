@@ -23,7 +23,7 @@ body {
 
 .navbar-collapse {
   position: absolute;
-  top: 6.4em;
+  top: 6em;
   width: 100%;
   background-color: #FFF;
   border-bottom-left-radius: 8px;
@@ -127,6 +127,7 @@ p.nav-header {
   z-index: -1;
   padding: 100% 0;
   background-position-y: -80px;
+  top: -13px;
 }
 
 .hero-text {
@@ -224,7 +225,7 @@ p.nav-header {
 }
 
 
-@media (min-width: 768px) and (max-width: 991px) { 
+@media (min-width: 768px) and (max-width: 992px) { 
 
   .nav-container {
     gap: 42px;
@@ -234,6 +235,28 @@ p.nav-header {
     margin-left: auto;
   }
 
+
+  .navbar-collapse {
+    padding-bottom: 0;
+    display: flex;
+    height: 340px;
+    gap: 10px;
+    justify-content: center;
+  }
+
+  .HEADPHONES {
+    margin-top: 0;
+  }
+
+  .nav-item {
+    width: 223px;
+  }
+
+  .nav-headphones-item, .nav-earphones-item, .nav-speakers-item {
+    display: contents;
+  }
+
+ 
 
 }
 
