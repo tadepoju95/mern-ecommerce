@@ -1,7 +1,7 @@
 import React from 'react';
 import Header from './Header';
 import MainContent from './home/MainContent';
-
+import ListOfProducts from './home/ListOfProducts';
 
 
 
@@ -10,6 +10,7 @@ const Home = () => {
 		<div>
 			<Header />
 			<MainContent />
+			<ListOfProducts />
 		</div>
 
 	)
